@@ -1,11 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <title>Upcode</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bundle.min.css">
 </head>
 <body>
+<div class="container__main">
+    <header id="home" class="container__slider menu__top">
+        <!-- menu main -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="container__menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="container__menu--right">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#home" rel='m_PageScroll2id'>Home</a></li>
 
+                                <li>
+                                    <a href="#product" rel='m_PageScroll2id'>Products <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                        <li>
+                                            <a href="#" class="dropdown-toggle"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Name Surname</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                                <li>
+                                                    <a href="#" class="dropdown-toggle"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Name Surname</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#about" rel='m_PageScroll2id'>About</a></li>
+                                <li>
+                                    <a href="#contact" rel='m_PageScroll2id'>Contact</a>
+                                </li>
+                            </ul>
+                            <div id="imaginary_container" class="container__menu--search">
+                                <div class="input-group stylish-input-group">
+                                    <input type="search" class="form-control"  placeholder="">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu main and -->
+        <!-- /#slick -->
+        <div id="slick" class="slider__main">
+            <div>
+                <div class="img--holder" style="background-image: url(img/img.png);">
+                    <div class="head__main">
+                        <span class="head__main--title">Creative <span>Design Agency</span></span>
+                        <p class="head__main--desc">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img--holder" style="background-image: url(img/img.png);">
+                    <div class="head__main">
+                        <span class="head__main--title">Creative <span>Design Agency</span></span>
+                        <p class="head__main--desc">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img--holder" style="background-image: url(img/img.png);">
+                    <div class="head__main">
+                        <span class="head__main--title">Creative <span>Design Agency</span></span>
+                        <p class="head__main--desc">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow slick-prev js-slider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button class="slider-arrow slick-next js-slider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <!-- /#slick -->
+    </header>
+    <!-- /.container -->
+    <section id="why" class="section first">
+        <div class="container">
+            <h2 class="section__title">Why <span>Choose Us</span></h2>
+            <p class="section__desc">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.
+                Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+
+            <!-- Tile -->
+            <div class="tile">
+                <div class="tile__item">
+                    <div class="tile__icon">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="tile__link">
+                        <div class="tile__desk">
+                            <h3>your title</h3>
+                            <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                        </div>
+                        <div class="tile__link--block">
+                            <h3>see more</h3>
+                            <ul class="tile__link--list">
+                                <li><a href="javascript: void(0);"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript: void(0);"><i class="fa fa-search-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile__item">
+                    <div class="tile__icon">
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="tile__link">
+                        <div class="tile__desk">
+                            <h3>your title</h3>
+                            <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                        </div>
+                        <div class="tile__link--block">
+                            <h3>see more</h3>
+                            <ul class="tile__link--list">
+                                <li><a href="javascript: void(0);"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript: void(0);"><i class="fa fa-search-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile__item">
+                    <div class="tile__icon">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                    </div>
+                    <div class="tile__link">
+                        <div class="tile__desk">
+                            <h3>your title</h3>
+                            <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                        </div>
+                        <div class="tile__link--block">
+                            <h3>see more</h3>
+                            <ul class="tile__link--list">
+                                <li><a href="javascript: void(0);"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript: void(0);"><i class="fa fa-search-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile__item">
+                    <div class="tile__icon">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="tile__link">
+                        <div class="tile__desk">
+                            <h3>your title</h3>
+                            <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                        </div>
+                        <div class="tile__link--block">
+                            <h3>see more</h3>
+                            <ul class="tile__link--list">
+                                <li><a href="javascript: void(0);"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript: void(0);"><i class="fa fa-search-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile__item">
+                    <div class="tile__icon">
+                        <i class="fa fa-flag-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="tile__link">
+                        <div class="tile__desk">
+                            <h3>your title</h3>
+                            <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                        </div>
+                        <div class="tile__link--block">
+                            <h3>see more</h3>
+                            <ul class="tile__link--list">
+                                <li><a href="javascript: void(0);"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript: void(0);"><i class="fa fa-search-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tile end -->
+        </div>
+    </section>
+    <section id="product" class="section second">
+        <div class="arrow__top" style="background-image: url('img/block.png')">
+            <h2 class="section__title">our <span>products</span></h2>
+            <div class="sep_block">
+                <span></span>
+            </div>
+        </div>
+        <div class="container__slider second">
+            <div class="group__sl">
+                <div class="slider__pic">
+                    <div>
+                        <div class="container">
+                            <div class="product__main">
+                                <div class="product__item">
+                                    <img src="img/pic1.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic2.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic3.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic4.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic5.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic6.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container">
+                            <div class="product__main">
+                                <div class="product__item">
+                                    <img src="img/pic1.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic2.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic3.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic4.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic5.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic6.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container">
+                            <div class="product__main">
+                                <div class="product__item">
+                                    <img src="img/pic1.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic2.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic3.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic4.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic5.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                                <div class="product__item">
+                                    <img src="img/pic6.png" alt="">
+                                    <div class="product__txt">
+                                        <h3 class="product__title">title</h3>
+                                        <a href="" class="product__sub">Best Product</a>
+                                        <p>Duis bibendum diam non erat facilaisis en ter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section third">
+        <div class="container">
+            <div class="about">
+                <div class="about__item">
+                    <div class="about__item--txt">
+                        <h2 class="section__title">about <span>us</span></h2>
+                        <p class="section__desc">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue
+                            nibh, ut euism
+                            <br>
+                            Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+                        <p>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a.
+                            Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut
+                            volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper.
+                            Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit
+                            quam. </p>
+                        <div class="progress__main">
+                            <div class="progress__item">
+                                <div class="progress__desc">
+                                    <span>PHOTOSHOP</span>
+                                    <span>79%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 79%; height: 3px;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="progress__item">
+                                <div class="progress__desc">
+                                    <span>HTML/CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%; height: 3px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="progress__item">
+                                <div class="progress__desc">
+                                    <span>JAVASCRIPT</span>
+                                    <span>69%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 69%; height: 3px;" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="progress__item">
+                                <div class="progress__desc">
+                                    <span>WORDPRESS</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 92%; height: 3px;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="img/phone.png" alt="">
+                </div>
+            </div>
+            <h2 class="section__title">get in <span>touch</span></h2>
+            <p class="section__desc">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.<br>
+                Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+        </div>
+    </section>
+    <section id="map" class="map">
+        <div id="canvas-map"></div>
+        <div class="container">
+            <div class="form__main">
+                <div class="form__left">
+                    <form action="form/contact.php" role="form" class="contact_form" id="contact_form">
+                        <div class="form__item">
+                            <div class="clearfix">
+                                <div class="col-2">
+                                    <input type="text" id="contact_name" name="name"  placeholder="Full Name">
+                                </div>
+                                <div class="col-2">
+                                    <input type="email" id="contact_email" name="email" placeholder="E-mail Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <textarea id="contact_message" name="message"  placeholder="Message"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <div class="d-f">
+                                <div class="check-main">
+                                    <input tabindex="9" type="checkbox" id="checkbox-1-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <label for="checkbox-1-2">I like your company</label>
+                                </div>
+                                <button type="submit" class="btn__yellow" id="contact_submit" data-complete-text="Well done! Request was sent!" data-error-text="Something went wrong!">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form__right">
+                    <div class="form__right--wr">
+                        <p>69/A, Some Street Name <br>
+                            Your City, code 01234 <br>
+                            Country Name</p>
+                        <p>
+                            <span>+880 123 456 78 98</span><br>
+                            <span>+860 987 648 74 95</span>
+                        </p>
+                        <p>
+                            <a href="mailto:company@mail.com">company@mail.com</a>
+                            <a href="mailto:sales@mail.com">sales@mail.com</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer">
+        <p>Copyright &copy; Company. All Rights Reserved  2016</p>
+        <ul class="social__list">
+            <li class="social__li"><a href="#" class="social__link social__link--fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="social__li">
+                <a href="#" class="social__link social__link--gp">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
+                        <image id="googleplus_S" width="20" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoLFgoFHlM+4AAAA7FJREFUOMt1lMtrnGUYxc/zvO/3zUxmkpmkQ0gvGqrUVqHWhYhoBUGL1RbxAkIpgmgR0YWKLtSFiBsXUi9QEcHioksvi9rixtourBQVUQumptWQWnpJq8lMZibzvbfjIimkRX9/wOE85zwcmXpiK0BCrIVRg858G9XhIZhgIEKQzI1oxcJ0PVJw9BgoleGCv0uAZ6zaZ41qa/LsBL75uwyLJUhABLeXy6UbDeQmNbKK5KwVvTDn+hMm8weLXhGmL53HxvH1qJaqq0OI92XGln47O4nZzixycy30shgETw4PVF5bPTISJMnvVG5Va5+zxjSzSnH01e9/WDg4OQlDh1+nJzDfn3dGtTdx9qS70JpBbnMkApoEMLm9bXRwYO/OA0c/emz/t/vKxnzsfdwuJAar+Z3f/dU+9+kvLQ20I41qtbngi8Zcr9NIksxsb26sklUaItK0KkMytWsbMmvfqpTyV36aPDNeLITTDa2hV0Ssu6H+83CjsunMbHdTt+/+XDlYOWJUViWyMGqGVLUeop8BEACYQPnKWlUodCQE4OaxFetSCKfn+glsCUR1woW0abScOTHoUMybUB0COZ+Au0k+not5HZAWgCxXTNsiBmQqh61kT4dy9kanL4eaYzlqTQdArks+HhLghIdAUtxvhCAAGAkCeSQR+8BUAECiQLVVgDOdz2O//75as7mSmy+Cj/crzdsimE7CHVxqTgBABDACCIZA1KBah8jlZ4HVmOBd8OrcC1F0b6Zpi6j90IiMF86tMaoXezHCeY9GxYIqIAkQPZDnQCYsQ7OxAczVPC4VbeRij5N8h+DJRTPyEEAQRDcltEOACxGFDyh8OBxCeDiGMBdDQIwRJGFFBDFFJEBqlXxH18WVTPxHFMizbA9SWisxviwQ9JwDSJStRSLbANq4CvXeoTk48uhofcWxXlFshGBGRPek5B8g05Qx9iWIPL9UBTrOoR8jZFluy5GpXVs212rDR9yl+T2e8mJeL1MIUDzoig1qqz+q6iky3CKylB8EPiYwErpMV9TAlrPBnTHSRKYPjLEUEkgCUUUowglr+Vnfh1tb7T7UKAAgJaJSMhgoGTDxCoeWZFcjYRvVbSDfQ1o8TiTDQtdjqC5r/rjY+eTI8fOolRe3pFsE3LFhFBuvqaPXD1cKhhh2q8q9QnkXxFqABwCcB9NYbbjxIFSPKWR3OTMoZQYAEBNhVBZH5SqsqJxjcPcA+hSt3S6Q6yGYUvD0qTD75Xo2v/6/Av6LfwGioedvlcL8swAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__li"><a href="#" class="social__link social__link--tw">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li class="social__li">
+                <a href="#" class="social__link social__link--ball">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21">
+                        <image id="dribbble_S" width="20" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoLFg4PmuoS+gAABMZJREFUOMttVFtsVFUUXXuf+5g7r04ftDxK1aJAoERDNIqGapQYmli1igpqKpCYaGI0YiQSEQN+iDE+gkICJiIkBAMfEKNGBAWlCEKAFjDyKEJ5lk5LS2emnTv3nrP9KNQCrt9z9tpnn7X2osMNX8JLKRRV2DAhAAgCaOT7NXr6pHR4mbvQYhotBhxldXZ/5tLu47pz30x30knXc7H26A781PonVj74DnYdawfjOggAjGCl3vMCXf3LyXRXJh9U28xPM1NDP8zrdyYq1j9XMvFAL+UXE6NkoOQ/3ECI+4Vpm0VqiRWLLK2tTiFpYbYA5wQAAQhhUDAm6XrWItezd8bsyPjAaBDoJsIpYP6eiCaICMizn6mpjD/V2tHT3XbOf9e16brOrrLR2t3eO2/LN+dLvQSMmAFCHQjESIwULQeheLDCCLKB+djXiIaBXkuQnRqCmO2iLBqHCYKvF7ZunTK8pHTksrrZy091dyV8X6Dm3fs43Jh6247wC3LjfxAXF3uxiOuYny0yZ6OO13jo0ukjv//TMn9cSeWSHJk7ltzXsDHuRB7L5IMLjsN7qX3BqgqC+hsaxSCAiMBE0MaACBAhhAWpIcn/VRqLT9906vj2386f9r+orXvZD8yHedKlgTawFFo15G5qe2vFjIgV2TigsIgR6ReR04q4RQzv6kpnDwWJoHmEE89ABHBj0+G4C5DvqSVWuDYVAcj64aOWBLRPOHzICC6XeZH21S070xta9mBb42J0FrqhYoJsGNxDNs5ppotK8q86QaHWZ2vAMQSQCISAiOIHLMtVPTB8iABLQ8XKYqlRE8orhwUSjtOQKcXJ2NSkTowe5skPvugneg1/ajSPCYMgx4QQIEeIYkxUrhTK6eL8r1aw8CNCcI3oVMzxiqK2g3RfLyxigIBEhFuX7c6sKkrxJ5NLfBMlxxsWdfu1EYAAIYYiGtNvTMRioBKMsQRAkUI+LCAfFqCIEYqklZalhUC+HhWnnmNaoM93YlwqUX1rSfK1bCEUIfQpgwuAafaN7LaMyEEm1A/azwCpKIO0+XV7ZzjnNmXOJES5z9ZEF2UCmnwiXfJkKFShRV6hq2IMrAcjxjTHKviFJi/qQQTQYlAWj6G1k7/tyKZn3VUWQcGXRkupD7rzVGWR4JaixFg/5D/6CuFhpWjSNZWZCZdz+jhXpdy9KYeOagESTgQdubZN9es2z1p9gJLDy5yNEc9eA6IqQDCwsTw7ny3k/YLsIqZBy2hjdniOaeaGDV1Xlu3JfFSSUIi70YObjxyZmQ92pN6fVrWlN2NmXB1qMIsUZFrSAyyLmkTLVUKGMeazeET6CFiAutuT/OPcEWsOnkmvJLKaorb+bkxZRX1Hxofi60MBBt0ieqIGiSI+YVkU7/PD1Zl8MJcZYMBCedIymY6+xmwuaBqdSn1eVTSyPp3N30wGgBUV+6GZ2pPLtRObnNG6OQjCN0Ij0HpIfIkRGZUotrQJi3sL/WBi/B9YEbQfPJzLGVzx8WagwzoGMkwEoqF5SICvC2EQhi8ZoRdFZLuCYOgbmQgWGLZtdSVsB719Zn0oaKchl6yh3QkEGjhdx6BN+3Ph+OoIjU8Sj2RSOu33tG3NnDn5fFFNK9k+ghvzH8C/PKtLnAC0e4EAAAAASUVORK5CYII="/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/libs/slick.min.js"></script>
+<script src="js/libs/jquery.validate.min.js"></script>
+<script src="js/libs/icheck.min.js"></script>
+<script src="js/libs/jquery.malihu.PageScroll2id.min.js"></script>
+
+<!-- Google Map Script -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>

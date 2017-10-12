@@ -1,0 +1,357 @@
+// Clearfix
+.cf
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+
+// Border box
+
+.container__slider
+  position: relative
+
+.container__slider
+  .slick-dots
+    @extend .cf
+    position: absolute
+    text-align: center
+    bottom: 40px
+    left: 0
+    width: 100%
+    li
+      cursor: pointer
+      float: none
+      margin: 0 4px
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background: #B7B7B7
+      padding: 0
+      &:hover
+        background-color: #fff
+      &:last-child
+        border: none
+      &.slick-active
+        background: #ffffff
+      &, & button
+        outline: none
+      button
+        display: none
+
+
+.slick-slide
+  .img--holder
+    @include img-cover
+
+
+.slider__main, .container__slider
+  .slick-prev, .slick-next
+    width: 60px
+    height: 60px
+    background-color: rgba(255,255,255, 0.2)
+    color: #ffffff
+    line-height: 60px
+    text-align: center
+    font-size: 16px
+    &:hover
+      background-color: rgba(255,255,255, 0.6)
+  .slick-prev
+    &:before
+      display: none
+    left: 30px
+  .slick-next
+    &:before
+      display: none
+    right: 30px
+  .slick-arrow
+    z-index: 10
+
+
+.sim__sh
+  border: 0
+  border-radius: 0
+  box-shadow: none
+
+.menu__top
+  .dropdown-menu
+    border-top: 2px solid $yellow
+    background-color: rgba(0,0,0, 0.65)
+    @extend .sim__sh
+    left: 30px
+    padding: 20px 0
+    min-width: 184px
+    width: 100%
+  .dropdown-menu
+    >li
+      position: relative
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+  .dropdown-menu
+    >li
+      >a
+        color: #ffffff
+        font-size: 14px
+        background: none
+        .fa
+          &.fa-angle-right
+            margin-right: 4px
+          &.fa-angle-double-right
+            margin-right: 2px
+        &:focus
+          background: none
+        &:hover
+          background: none
+          color: $yellow
+        &.dropdown-toggle
+          color: $yellow
+
+  .dropdown-menu
+    >li
+      >.dropdown-menu
+        left: 100%
+        top: 0
+
+  .dropdown-menu
+    >li
+      &:hover
+        .dropdown-menu
+          display: block
+
+  .navbar-nav
+    >li
+      &:hover
+        .dropdown-menu
+          display: block
+
+  .dropdown-menu
+    >li
+      >.dropdown-menu
+        >li
+          >.dropdown-menu
+              display: none
+          &:hover
+            .dropdown-menu
+              display: block
+
+  .navbar
+    &.navbar-default
+      height: 70px
+      background-color: #fff
+      border: 0
+      box-shadow: 0 1px 2px rgba(0,0,0,.1)
+
+
+.container__menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #fff
+
+
+  .nav
+    >li
+      >a
+       font-size: $fs_menu
+       padding: 0 22px
+       &:hover
+         color: $orange
+       &.mPS2id-highlight
+         color: $orange
+  .navbar-nav
+    >li
+      >a
+        padding-top: 25px
+        padding-bottom: 25px
+        color: $black
+
+  .container__menu--right
+    display: flex
+    align-items: center
+  .navbar-header
+    float: none
+
+  .navbar-brand
+    float: none
+    padding: 0
+    margin: 0
+    img
+      max-width: 100%
+      height: auto
+
+  .container__menu--search
+    width: 180px
+    float: right
+    margin-top: 20px
+    margin-left: 60px
+
+    .input-group-addon
+      button
+        background: none
+        display: block
+        .i
+          top: 2px
+          color: $black-grey
+
+    .form-control
+      border: none
+      box-shadow: none
+      border-radius: 0
+      height: 30px
+      background-color: $search
+      font-size: $fs_search
+      line-height: 30px
+      padding-right: 39px
+
+    .input-group-addon
+      background-color: $search
+      border: none
+      box-shadow: none
+      border-radius: 0
+      height: 30px
+      padding: 0
+      line-height: 30px
+      font-size: $fs_search
+      margin-right: 27px
+      position: absolute
+      right: 10px
+      z-index: 10
+
+.img--holder
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    background: url("../img/overley.png")
+    @include img-cover()
+
+
+.head__main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex: 1 0 auto
+  height: 100%
+  width: 100%
+  position: relative
+  text-align: center
+
+.head__main--title
+  display: block
+  font-size: 64px
+  margin-bottom: 20px
+  text-transform: uppercase
+  font-weight: bold
+  span
+    color: $yellow
+
+.head__main--desc
+  font-size: $fs_menu
+  line-height: 30px
+  max-width: 730px
+  width: 100%
+  margin: 0 auto
+  color: #fff
+
+
+@media (min-width: 1026px)
+  .navbar-collapse
+    width: auto
+    border-top: 0
+    box-shadow: none
+
+  .navbar-collapse.collapse
+    display: block !important
+    height: auto !important
+    padding-bottom: 0
+    overflow: visible !important
+
+  .navbar-collapse.in
+    overflow-y: visible
+
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse
+    padding-left: 0
+    padding-right: 0
+
+
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse
+    max-height: 340px
+  .navbar-toggle
+      display: none
+  .navbar-collapse.collapse
+    display: block!important
+    height: auto!important
+    padding-bottom: 0
+    overflow: visible!important
+
+@media (max-width: 1199px)
+  .head__main--title
+    font-size: 56px
+
+
+@media (max-width: 1026px)
+  .navbar-toggle
+    display: block
+  .container__menu
+    display: block
+
+  .menu__top
+    .navbar-default .navbar-collapse
+      width: 98%
+    .navbar-toggle
+      margin-top: 17px
+      margin-right: 0
+      border: none
+      width: 25px
+      padding: 9px 0
+      cursor: pointer
+      &:hover,&:focus
+        background: none
+      .icon-bar
+        width: 25px
+        background-color: #4C4C4C
+      .icon-bar + .icon-bar
+          margin-top: 5px
+
+  .container__menu
+    .container__menu--right
+       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+
+@media (max-width: 767px)
+  .container__menu .navbar-brand
+    padding: 15px
+  .container__menu .navbar-nav > li > a
+    padding-top: 5px
+    padding-bottom: 10px
+
+  .container__menu .container__menu--search
+    width: 180px
+    float: none
+    margin: 20px auto
+
+  .menu__top .dropdown-menu > li > .dropdown-menu
+    left: auto
+  .menu__top .dropdown-menu
+    left: auto
+    position: relative
+  .menu__top .navbar-default .navbar-collapse
+    width: 100%
+  .container__menu .container__menu--right
+    margin-top: 2px
+
+
+
+
+
+@media (max-width: 667px)
+  .head__main--title
+    font-size: 33px

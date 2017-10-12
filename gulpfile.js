@@ -9,8 +9,10 @@ var browserSync = require('browser-sync').create();
 
 var config = {
     paths: {
-        sass: './src/sass/**/*.{sass}',
-        html: './public/index.html'
+        // sass: './src/sass/**/*.sass',
+        sass: ['./src/sass/**/*.sass', './src/sass/**/*.scss'],
+        html: './public/index.html',
+        js: './public/**/*.js'
     },
     output: {
         cssName: 'bundle.min.css',
@@ -40,6 +42,7 @@ gulp.task('serve', function () {
 
     gulp.watch(config.paths.sass, ['sass']);
     gulp.watch(config.paths.html).on('change', browserSync.reload);
+    gulp.watch(config.paths.js).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['sass', 'serve']);
