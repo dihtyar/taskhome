@@ -34,7 +34,7 @@ jQuery(function($) {
             el.slider.slick({
                 arrows: false,
                 dots: true,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: set.sliderAutoplaySpeed,
                 fade: false,
                 infinite: true,
@@ -127,7 +127,7 @@ $(function () {
     $('.slider__pic').slick({
         arrows: false,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         fade: false,
         infinite: true,
         pauseOnHover: false,
