@@ -181,7 +181,7 @@ $(function () {
         };
 
         map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
-        var image = 'images/point.png';
+        var image = 'img/point.png';
         var myLatLng = new google.maps.LatLng(33.974, -118.07);
         var beachMarker = new google.maps.Marker({
             position: myLatLng,
@@ -210,4 +210,41 @@ $(function () {
         offset: 70
     });
 
+
+    //
+    // $(window).scroll(function () {
+    //     if(location.hash == "#about"){
+    //         console.log("23");
+    //     }
+    // });
+
+    // var hash = window.location.hash;
+    //
+    // switch(hash){
+    //     case "#about":
+    //         $('#about').removeClass("active");
+    //         $('#about').addClass('active');
+    //         break;
+    // }
+    //
+    //
+    // var progress =$(".progress-bar"),
+    //     progress_cent = progress.attr("aria-valuenow") + "%";
+    //
+    //     progress.each(function(){
+    //         progress.animate({
+    //             width: progress_cent
+    //         }, 2500 );
+    //     });
+
+
+
+        // prog.css("width",function() {
+        //     return $(this).attr("aria-valuenow") + "%";
+        // });
+        //
+        // console.log(progpocent)
+
 });
+
+
